@@ -6,21 +6,28 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 import { getStorage } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js";
 
-// Your web app's Firebase configuration
-// IMPORTANT: Replace with your actual config from the Firebase console
+// =================================================================
+// TODO: Replace the object below with your app's Firebase project configuration
+// Go to your Project Settings > General > Your apps > SDK setup and configuration
+// =================================================================
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  // PASTE YOUR CONFIG OBJECT FROM THE FIREBASE CONSOLE HERE
+  apiKey: "PASTE_YOUR_API_KEY_HERE",
+  authDomain: "PASTE_YOUR_AUTH_DOMAIN_HERE",
+  projectId: "PASTE_YOUR_PROJECT_ID_HERE",
+  storageBucket: "PASTE_YOUR_STORAGE_BUCKET_HERE",
+  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID_HERE",
+  appId: "PASTE_YOUR_APP_ID_HERE"
 };
+// =================================================================
+// END OF SECTION TO REPLACE
+// =================================================================
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize and export Firebase services
+// Initialize and export Firebase services to be used in other files
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);

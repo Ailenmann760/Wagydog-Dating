@@ -7,11 +7,10 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/9.15.0/firebase
 import { getStorage } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js";
 
 // =================================================================
-// TODO: Replace the object below with your app's Firebase project configuration
-// Go to your Project Settings > General > Your apps > SDK setup and configuration
+// PASTE YOUR CONFIG OBJECT FROM THE FIREBASE CONSOLE HERE
+// This is the only method that works for a vanilla JS project.
 // =================================================================
 const firebaseConfig = {
-  // PASTE YOUR CONFIG OBJECT FROM THE FIREBASE CONSOLE HERE
   apiKey: "PASTE_YOUR_API_KEY_HERE",
   authDomain: "PASTE_YOUR_AUTH_DOMAIN_HERE",
   projectId: "PASTE_YOUR_PROJECT_ID_HERE",

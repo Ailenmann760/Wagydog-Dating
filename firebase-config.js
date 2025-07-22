@@ -6,27 +6,17 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 import { getStorage } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js";
 
-// =================================================================
-// PASTE YOUR CONFIG OBJECT FROM THE FIREBASE CONSOLE HERE
-// This is the only method that works for a vanilla JS project.
-// =================================================================
+
+// This firebaseConfig object will be replaced by your real one.
 const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY_HERE",
-  authDomain: "PASTE_YOUR_AUTH_DOMAIN_HERE",
-  projectId: "PASTE_YOUR_PROJECT_ID_HERE",
-  storageBucket: "PASTE_YOUR_STORAGE_BUCKET_HERE",
-  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID_HERE",
-  appId: "PASTE_YOUR_APP_ID_HERE"
+  // Your keys will go here
 };
-// =================================================================
-// END OF SECTION TO REPLACE
-// =================================================================
 
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize and export Firebase services to be used in other files
+// Initialize and export Firebase services
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);

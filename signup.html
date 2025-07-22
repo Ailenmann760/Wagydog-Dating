@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Wagydog Dating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Create Your Profile</h1>
+        </header>
+        <main>
+            <form id="signup-form" class="auth-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password (min. 6 characters)" required>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="non-binary">Non-binary</option>
+                </select>
+                <textarea id="bio" placeholder="Short Bio (e.g., Golden Retriever enthusiast)" maxlength="150" required></textarea>
+                <textarea id="about-me" placeholder="About Me (Tell us more about you and your dog!)" maxlength="500" required></textarea>
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" accept="image/*" required>
+                <button type="submit" id="signup-btn" class="btn btn-primary">Sign Up</button>
+            </form>
+            <p class="form-link">Already have an account? <a href="login.html">Login</a></p>
+            <p id="error-message" class="error-text"></p>
+        </main>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
